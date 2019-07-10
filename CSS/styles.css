@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+.container {
+  background-color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  line-height: 167%;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+  "navbar"
+  "titlePage"
+  "summaryInfo";
+}
+
+.navbar, .titlePage, .summaryInfo {
+    padding: 4rem;
+}
+
+.navbar {
+  background-color: #00ffff;
+  grid-area: navbar;
+}
+
+.titlePage {
+  background-color: #ff0fff;
+  grid-area: titlePage;
+  padding: 7rem 2rem;
+}
+
+.summaryInfo {
+  background-color: #ffff00;
+  grid-area: summaryInfo;
+}
+
+@media (min-width:1025px) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "navbar navbar navbar"
+    "titlePage . ."
+    "summaryInfo . .";
+  }
+}
+
+/*when you float, if you lose the container, use "overflow: hidden; "*/
