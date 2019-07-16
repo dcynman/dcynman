@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/flex.css">
     <title>David Cynman's Portfolio</title>
   </head>
 
@@ -15,54 +17,72 @@
     <!--top nav bar-->
     <header>
       <nav class="navbar">
-        <img src='images/landingPage/logo.png' alt='Logo'>
-        <h1>David Cynman</h1>
-        <ul>
-          <li><a href='link'>Work</a></li>
-          <li><a href='about.html'>About</a></li>
+        <ul class="flex-container">
+          <li class="link one"><a href="index.html"><img src='images/landingPage/logo.png' alt='Logo'></a></li>
+          <li class="link two">David Cynman</li>
+          <li class="link three"><a href='link'>Work</a></li>
+          <li class="link four"><a href='about.html'>About</a></li>
         </ul>
       </nav>
     </header>
 
     <!--Personal Description-->
     <section class="hero">
-      <h1>I’m a Santa Barbara based UX/UI designer with a background in psychological and anthropological research. Empathy and empiricism drive my process.</h1>
-      <a href='link'>Get in touch</a>
+      <div class="heroContent">
+        <h1>I’m a Santa Barbara based UX/UI designer with a background in psychological and anthropological research. Empathy and empiricism drive my process.</h1>
+        <a href='link'>Get in touch</a>
+      </div>
+      <div class="downArrow">
+        <p>WORK</p>
+        <img src="images/landingPage/downArrow.png" alt="Down Arrow">
+      </div>
     </section>
 
     <!--Case Study One: Brick by Brick-->
-    <article class="BxB">
-      <img src='images/landingPage/blpLogo.png' alt='Berry Lane Partners Logo'>
-      <img src='images/landingPage/libertyHudsonLogo.png' alt='Liberty Hudson Logo'>
-      <h2>Berry Lane Partners and Liberty Hudson Construction</h2>
-      <h1>Real estate investing from the ground up</h1>
-      <h3>BRAND IDENTITY / DESIGN</h3>
-      <a href='linktobxbcasestudy'>Read case study</a>
-      <figure>
-        <img src='images/landingPage/bxbMockup.png' alt='Hand Holding iPhone'>
+    <article class="articleContainer BxB">
+      <div class="bxbContainer">
+        <div class="logoContainer">
+          <img src='images/landingPage/blpLogo.png' alt='Berry Lane Partners Logo'>
+          <img src='images/landingPage/libertyHudsonLogo.png' alt='Liberty Hudson Logo'>
+        </div>
+        <h2>Berry Lane Partners and Liberty Hudson Construction</h2>
+        <h1>Real estate investing from the ground up</h1>
+        <h3>BRAND IDENTITY / DESIGN</h3>
+        <a href='linktobxbcasestudy'>Read case study</a>
+      </div>
+      <figure class="mockupContainer">
+        <img id="hand" src='images/landingPage/bxbMockup.png' alt='Hand Holding iPhone'>
       </figure>
     </article>
 
     <!--Case Study Two: Mindfulness App-->
-    <article class="EBC">
-      <img src='images/landingPage/ebcLogo.png' alt='Evidence Based Courses Logo'>
-      <h2>The Center for Mindfulness and Human Potential</h2>
-      <h1>Teacher tools for mindful classrooms</h1>
-      <h3>UX RESEARCH + DESIGN / UI DESIGN</h3>
-      <a href='linktoEBCCaseStudy'>Read case study</a>
-      <figure>
+    <article class="articleContainer CMHP">
+      <div class="CMHPContainer" style="order: 2">
+        <div class="cmhpLogoContainer">
+          <img src='images/landingPage/ebcLogo.png' alt='Evidence Based Courses Logo'>
+        </div>
+        <h2>The Center for Mindfulness and Human Potential</h2>
+        <h1>Teacher tools for mindful classrooms</h1>
+        <h3>UX RESEARCH + DESIGN / UI DESIGN</h3>
+        <a href='linktoEBCCaseStudy'>Read case study</a>
+      </div>
+      <figure class="mockupContainer" style="order: 1">
         <img src='images/landingPage/ebcMockup.png' alt='Phones Displaying App Screens'>
       </figure>
     </article>
 
     <!--Case Study Three: Renter's Wallet-->
-    <article class="RW">
-      <img src='images/landingPage/rwLogo.png' alt='Renter&#39;s Wallet Logo'>
-      <h2>Renter's Wallet</h2>
-      <h1>Stop losing rental docs.<br>Save money.</h1>
-      <h3>UX RESEARCH + DESIGN / UI DESIGN</h3>
-      <a href='rentersWallet.html'>Read case study</a>
-      <figure>
+    <article class="articleContainer RW">
+      <div class="RWContainer">
+        <div class="RWLogoContainer">
+          <img src='images/landingPage/rwLogo.png' alt='Renter&#39;s Wallet Logo'>
+        </div>
+        <h2>Renter's Wallet</h2>
+        <h1>Stop losing rental docs.<br>Save money.</h1>
+        <h3>UX RESEARCH + DESIGN / UI DESIGN</h3>
+        <a href='rentersWallet.html'>Read case study</a>
+      </div>
+      <figure class="mockupContainer">
         <img src='images/landingPage/rwMockup.png' alt='Computer Displaying Renter&#39;s Wallet Screen'>
       </figure>
     </article>

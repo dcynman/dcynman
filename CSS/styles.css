@@ -6,23 +6,101 @@ html {
   font-size: 12px;
 }
 
+body {
+  color: #676767;
+}
+
 .container {
   background-color: white;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+/*navbar*/
+.flex-container {
+  background-color: #F2F5F5;
+}
+
+.flex-container li{
+  padding: 2em;
+  color: #DB9E00;
+}
+
 h1 {
   font-size: 4rem;
+  font-weight: bold;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 p {
   line-height: 167%;
 }
 
+.hero {
+  background-color: #F2F5F5;
+}
+
+.hero h1{
+  font-size: 2.6rem;
+  font-weight: normal;
+  line-height: 130%;
+}
+
+.downArrow {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.BxB, .RW{
+  background-color: #F5EBDF;
+  text-align: center;
+}
+
+.CMHP {
+  background-color: #F2F5F5;
+  text-align: center;
+}
+
+.BxB h1, h2, h3, div.logoContainer {
+  padding: 1.5rem;
+}
+
+.CMHPContainer h1, h2, h3, div.cmhpLogoContainer {
+  padding: 1.5rem;
+}
+
+#hand {
+  max-width: 70%;
+}
+
+.logoContainer img {
+  width: 10rem;
+}
+
+.cmhpLogoContainer img {
+  height: 8rem;
+}
+
+.RWLogoContainer img {
+  height: 8rem;
+}
+
+.RW {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+/*
 body {
   display: grid;
   grid-template-areas:
@@ -60,5 +138,6 @@ body {
     "summaryInfo . .";
   }
 }
+*/
 
 /*when you float, if you lose the container, use "overflow: hidden; "*/
