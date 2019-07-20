@@ -50,6 +50,12 @@ h3 {
   font-weight: 600;
 }
 
+h6 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 p {
   line-height: 167%;
 }
@@ -92,6 +98,11 @@ p {
   max-width: 70%;
 }
 
+#laptop {
+  max-width: 85%;
+  padding-right: 1.5em;
+}
+
 .logoContainer img {
   width: 10rem;
 }
@@ -107,6 +118,85 @@ p {
 .RW {
   padding-top: 10rem;
   padding-bottom: 10rem;
+}
+
+/*Padding to the left and right of text blocks */
+.bxbContainer, .RWContainer {
+  padding-left: 13rem;
+  align-items: center;
+}
+
+.CMHPContainer {
+  padding-right: 13rem;
+}
+
+footer {
+  background-color: #F2F5F5;
+  padding: 6.5rem;
+  text-align: center;
+}
+
+footer h2 {
+  font-weight: 300;
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding-bottom: 1.5rem;
+}
+
+.social {
+  padding-bottom: 1.5rem;
+}
+
+
+
+/*button styling*/
+.caseStudyButton, .getInTouchButton {
+  border-radius: .5rem;
+  background-color: #E9B327;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: .7rem;
+  width: 15rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.08), 0 6px 20px 0 rgba(0,0,0,0.08);
+}
+
+.caseStudyButton span, .getInTouchButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.caseStudyButton span:after, .getInTouchButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.caseStudyButton:hover span, .getInTouchButton:hover span {
+  padding-right: 25px;
+}
+
+.caseStudyButton:hover span:after,  .getInTouchButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.getInTouchButton {
+  margin-top: 3rem;
 }
 
 /*
